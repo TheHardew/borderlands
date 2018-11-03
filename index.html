@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Borderlands 2 Useful Links </title>
+        <meta charset="utf-8">
+
+        <style>
+        body {
+            background-color: black;
+            font-family: Sans-Serif;
+            box-sizing: border-box; 
+            padding: 15px;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            width: 100%; 
+        }
+
+        .main-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-gap: 15px;
+            height: 100%;
+            width: 50%;
+        }
+        
+        .grid-image {
+            max-height: 100%;
+            object-fit: cover;
+            object-position: 0 0;
+            width: 100%;
+        }
+
+        .grid-element:hover {
+            transform: scale(1.05);
+        }
+
+        .grid-link {
+            align-items: center;
+            box-shadow: inset 0 0 0 5px white;
+            color: white;
+            display: flex;
+            font-size: 2em;
+            height: 100%;
+            justify-content: space-around;
+            text-decoration: none;
+        }
+
+        .grid-link:hover {
+            text-decoration: underline;
+        }
+
+        #assault-rifles {
+            grid-area: 1 / 1 / 1 / 1;
+        }
+
+        #pistols {
+            grid-area: 2 / 1 / 2 / 1;
+        }
+
+        #rpgs {
+            grid-area: 3 / 1 / 3 / 1;
+        }
+
+        #shotguns {
+            grid-area: 4 / 1 / 4 / 1;
+        }
+        
+        #smgs {
+            grid-area: 5 / 1 / 5 / 1;
+        }
+
+        #sniper-rifles {
+            grid-area: 6 / 1 / 6 / 1;
+        }
+
+        #shields {
+            grid-area: 1 / 2 / 3 / 2;
+        }
+
+        #skill-calculator {
+            grid-area: 3 / 2 / 3 / 2;
+        }
+
+        #patch-changelog {
+            grid-area: 4 / 2 / 4 / 2;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="main-grid">
+            <a id="assault-rifles"   class="grid-element" href="bin/assault%20rifles.jpg"><img class="grid-image" src="bin/assault%20rifles.jpg"></a>
+            <a id="pistols"          class="grid-element" href="bin/pistols.jpg">       <img class="grid-image" src="bin/pistols.jpg"></a>
+            <a id="rpgs"             class="grid-element" href="bin/rpgs.jpg">          <img class="grid-image" src="bin/rpgs.jpg"></a>
+            <a id="shotguns"         class="grid-element" href="bin/shotguns.jpg">      <img class="grid-image" src="bin/shotguns.jpg"></a>
+            <a id="smgs"             class="grid-element" href="bin/smgs.jpg">          <img class="grid-image" src="bin/smgs.jpg"></a>
+            <a id="sniper-rifles"    class="grid-element" href="bin/sniper%20rifles.jpg"> <img class="grid-image" src="bin/sniper%20rifles.jpg"></a>
+            <a id="shields"          class="grid-element" href="bin/shields.png">       <img class="grid-image" src="bin/shields.png"></a>
+            <a id="skill-calculator" class="grid-element grid-link" href="http://bl2skills.com/"> Skill Calculator </a>
+            <a id="patch-changelog"  class="grid-element grid-link" href="https://github.com/BLCM/BLCMods/blob/master/Borderlands%202%20mods/Community%20Patch%20Team/Full%20UCP%20Changelog.txt"> Patch changelog </a>
+        </div>
+    </body>
+</html>
