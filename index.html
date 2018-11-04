@@ -7,6 +7,10 @@
         <style>
         body {
             background-color: black;
+            background-image: url("bin/bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
             font-family: Sans-Serif;
             box-sizing: border-box; 
             padding: 16px;
@@ -33,6 +37,10 @@
             object-position: 0 0;
             width: 100%;
         }
+        
+        .grid-element {
+            transition: 0.2s;
+        }
 
         .grid-element:hover {
             transform: scale(1.05);
@@ -47,10 +55,13 @@
             height: 100%;
             justify-content: space-around;
             text-decoration: none;
+
+            background: rgba(0, 0, 0, 0.65);
         }
 
         .grid-link:hover {
             text-decoration: underline;
+            background: rgba(0, 0, 0, 0.85);
         }
 
         #assault-rifles {
