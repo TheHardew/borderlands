@@ -9,7 +9,7 @@
             background-color: black;
             font-family: Sans-Serif;
             box-sizing: border-box; 
-            padding: 15px;
+            padding: 16px;
         }
 
         html, body {
@@ -22,7 +22,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(6, 1fr);
-            grid-gap: 15px;
+            grid-gap: 16px;
             height: 100%;
             width: 100%;
         }
@@ -54,55 +54,67 @@
         }
 
         #assault-rifles {
-            grid-area: 1 / 1 / 2 / 2;
+            grid-area: 1 / 1 / 1 / 1;
         }
 
         #pistols {
-            grid-area: 2 / 1 / 3 / 2;
+            grid-area: 2 / 1 / 2 / 1;
         }
 
         #rpgs {
-            grid-area: 3 / 1 / 4 / 2;
+            grid-area: 3 / 1 / 3 / 1;
         }
 
         #shotguns {
-            grid-area: 4 / 1 / 5 / 2;
+            grid-area: 4 / 1 / 4 / 1;
         }
         
         #smgs {
-            grid-area: 5 / 1 / 5 / 2;
+            grid-area: 5 / 1 / 5 / 1;
         }
 
         #sniper-rifles {
-            grid-area: 6 / 1 / end / 2;
+            grid-area: 6 / 1 / 6 / 1;
         }
 
         #shields {
-            grid-area: 1 / 2 / span 2 / 3;
+            grid-area: 1 / 2 / 1 / 2;
         }
         
-        #legendaries {
-            grid-area: 3 / 2 / 4 / 3;
+        #pearls {
+            grid-area: 2 / 2 / 2 / 2;
+            color: #11D1D4;
+            box-shadow: inset 0 0 0 5px #11D1D4;
         }
 
-        #pearls {
-            grid-area: 4 / 2 / 5 / 3;
+        #legendaries {
+            grid-area: 3 / 2 / 3 / 2;
+            color: #E7A30F;
+            box-shadow: inset 0 0 0 5px #E7A30F;
         }
 
         #unique{
-            grid-area: 5 / 2 / 6 / 3;
+            grid-area: 4 / 2 / 4 / 2;
+            color: #2C6AA3;
+            box-shadow: inset 0 0 0 5px #2C6AA3;
+        }
+
+        #seraph {
+            grid-area: 5 / 2 / 5 / 2;
+            color: #D2748C;
+            box-shadow: inset 0 0 0 5px #D2748C;
         }
 
         #prefixes {
-            grid-area: 6 / 2 / end / 3;
+            grid-area: 6 / 2 / 6 / 2;
         }
 
         #skill-calculator {
-            grid-area: 1 / 3 / 2 / 4;
+            grid-area: 1 / 3 / 1 / 3;
         }
 
         #patch-changelog {
-            grid-area: 1 / 4 / 2 / end;
+            grid-area: 1 / 4 / 1 / 4;
         }
 
         </style>
@@ -116,12 +128,13 @@
             <a id="smgs"             class="grid-element" href="bin/smgs.jpg">          <img class="grid-image" src="bin/smgs.jpg"></a>
             <a id="sniper-rifles"    class="grid-element" href="bin/sniper%20rifles.jpg"> <img class="grid-image" src="bin/sniper%20rifles.jpg"></a>
             <a id="shields"          class="grid-element" href="bin/shields.png">       <img class="grid-image" src="bin/shields.png"></a>
+            <a id="pearls"           class="grid-element grid-link" href="https://borderlands.fandom.com/wiki/Pearlescent#Borderlands_2"> Pearlescent items </a>
+            <a id="legendaries"      class="grid-element grid-link" href="https://borderlands.fandom.com/wiki/Legendary#List_of_Legendary_Items_.28Borderlands_2.29"> Legendary items </a>
+            <a id="unique"           class="grid-element grid-link" href="https://borderlands.fandom.com/wiki/Unique#Names_and_Locations_.28Borderlands_2.29"> Unique items </a>
+            <a id="seraph"           class="grid-element grid-link" href="https://borderlands.fandom.com/wiki/Seraph"> Seraph items </a>
+            <a id="prefixes"         class="grid-element grid-link" href="https://borderlands.fandom.com/wiki/Weapons_by_prefix_(Borderlands_2_%26_Pre-Sequel)"> Weapon prefixes </a>
             <a id="skill-calculator" class="grid-element grid-link" href="http://bl2skills.com/"> Skill Calculator </a>
             <a id="patch-changelog"  class="grid-element grid-link" href="https://github.com/BLCM/BLCMods/blob/master/Borderlands%202%20mods/Community%20Patch%20Team/Full%20UCP%20Changelog.txt"> UCP changelog </a>
-            <a id="prefixes"         class="grid-element grid-link" href="https://borderlands.fandom.com/wiki/Weapons_by_prefix_(Borderlands_2_%26_Pre-Sequel)"> Weapon prefixes </a>
-            <a id="legendaries"      class="grid-element grid-link" href="https://borderlands.fandom.com/wiki/Legendary#List_of_Legendary_Items_.28Borderlands_2.29"> Legendary items </a>
-            <a id="pearls"           class="grid-element grid-link" href="https://borderlands.fandom.com/wiki/Pearlescent#Borderlands_2"> Pearlescent items </a>
-            <a id="unique"           class="grid-element grid-link" href="https://borderlands.fandom.com/wiki/Unique#Names_and_Locations_.28Borderlands_2.29"> Unique items </a>
         </div>
     </body>
 </html>
